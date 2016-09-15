@@ -57,6 +57,6 @@ __namespace__.TestClass = function() {
 
 _namespace = ".NAMESPACE" //Starts with dot - will add namespace to the last defined
 __namespace__.TestClass = function() {
-
-}; // same as   SOME.NEW.NAMESPACE.TestClass = function
+...
+}; // same as SOME.NEW.NAMESPACE.TestClass = function
 ```
