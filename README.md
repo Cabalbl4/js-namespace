@@ -10,7 +10,7 @@ _namespace = "SOME.NEW.NAMESPACE"
 
 SOME.NEW.NAMESPACE.MyClass = function {
 };
-//ES 2016
+//ES 2015
 SOME.NEW.NAMESPACE.MyClass2 = class {
 };
 //Shorthand
