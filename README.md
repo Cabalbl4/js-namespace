@@ -14,7 +14,7 @@ SOME.NEW.NAMESPACE.MyClass = function {
 SOME.NEW.NAMESPACE.MyClass2 = class {
 };
 //Shorthand
-__namespace__.MyClass3 = ... //function / class / anything
+_namespace.MyClass3 = ... //function / class / anything
 ```
 
 Under the hood, namespace is a nested object, i.e. 
@@ -45,20 +45,21 @@ SOME.NEW.NAMESPACE.TestClass = function() {
 ```
 
 
-### \_\_namespace\_\_ shorthand
-Variable \_\_namespace\_\_ points to the last defined namespace. It can be used to shorten definitions
+### \_namespace as shorthand
+Property accessor \_namespace points to the last defined namespace. It can be used to shorten definitions.
 
 ```javascript
 _namespace = "SOME.NEW"
 
-__namespace__.TestClass = function() {
+_namespace.TestClass = function() {
  ...
 }; // same as SOME.NEW.TestClass = function ...
 
 
 
 _namespace = ".NAMESPACE" //Starts with dot - will add namespace to the last defined
-__namespace__.TestClass = function() {
+_namespace.TestClass = function() {
 ...
 }; // same as SOME.NEW.NAMESPACE.TestClass = function
 ```
+Under the hood, currently defined namespace is kept in variable \_\_namespace\_\_. It can be set to "window" to reset the namespace (or point it to another namespace).
