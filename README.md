@@ -43,8 +43,8 @@ SOME.NEW.NAMESPACE.TestClass = function() {
 ```
 
 
-### Namespace shorthand
-Variable __namespace__ points to the last defined namespace. It can be used to shorten definitions
+### \_\_namespace\_\_ shorthand
+Variable \_\_namespace\_\_ points to the last defined namespace. It can be used to shorten definitions
 
 ```javascript
 _namespace = "SOME.NEW"
