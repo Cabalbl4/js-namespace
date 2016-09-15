@@ -13,6 +13,8 @@ SOME.NEW.NAMESPACE.MyClass = function {
 //ES 2016
 SOME.NEW.NAMESPACE.MyClass2 = class {
 };
+//Shorthand
+__namespace__.MyClass3 = ... //function / class / anything
 ```
 
 Under the hood, namespace is a nested object, i.e. 
