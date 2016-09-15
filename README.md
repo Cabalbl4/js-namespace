@@ -22,8 +22,8 @@ _namespace = "SOME.NEW.NAMESPACE"
 
 ///equals to:
 if(! window.SOME) window.SOME = {};
-if(! window.SOME.NEW) window.SOME.NEW = {}
-if(! window.SOME.NEW.NAMESPACE) window.SOME.NEW.NAMESPACE = {}
+if(! window.SOME.NEW) window.SOME.NEW = {};
+if(! window.SOME.NEW.NAMESPACE) window.SOME.NEW.NAMESPACE = {};
 ```
 
 ### Dot notation
@@ -34,7 +34,7 @@ _namespace = "SOME.NEW"
 
 SOME.NEW.TestClass = function() {
  ...
-}
+};
 
 _namespace = ".NAMESPACE" //Starts with dot - will add namespace to the last defined
 SOME.NEW.NAMESPACE.TestClass = function() {
@@ -51,7 +51,7 @@ _namespace = "SOME.NEW"
 
 __namespace__.TestClass = function() {
  ...
-} // same as SOME.NEW.TestClass = function ...
+}; // same as SOME.NEW.TestClass = function ...
 
 
 
