@@ -68,4 +68,3 @@ _namespace.TestClass = function() {
 ...
 }; // same as SOME.NEW.NAMESPACE.TestClass = function
 ```
-Under the hood, last defined or set namespace is kept in variable \_\_namespace\_\_. 
