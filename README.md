@@ -15,6 +15,12 @@ SOME.NEW.NAMESPACE.MyClass2 = class {
 };
 //Shorthand
 _namespace.MyClass3 = ... //function / class / anything
+
+//Assign current namespace to window (reset)
+_namespace = window;
+
+//Assign current namespace to already existing one
+_namespace = SOME.NEW.NAMESPACE;
 ```
 
 Under the hood, namespace is a nested object, i.e. 
@@ -62,4 +68,4 @@ _namespace.TestClass = function() {
 ...
 }; // same as SOME.NEW.NAMESPACE.TestClass = function
 ```
-Under the hood, currently defined namespace is kept in variable \_\_namespace\_\_. It can be set to "window" to reset the namespace (or point it to another namespace).
+Under the hood, last defined or set namespace is kept in variable \_\_namespace\_\_. 
