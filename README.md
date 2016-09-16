@@ -3,7 +3,7 @@ Small function to define JavaScript namespaces
 
 ##Usage
 
-Define full namespace (namespaces are dot-delimited by default)
+Define and use a namespace (namespaces are dot-delimited by default)
 
 ```javascript
 _namespace = "SOME.NEW.NAMESPACE"
