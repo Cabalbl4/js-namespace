@@ -27,4 +27,15 @@ var __namespace__ = _context;
         __namespace__ = current;
       }
     });
-}(this);
+}(
+  function() {
+    var l_gl = null;
+    //detect nodeJS
+    try {
+      l_gl = global;
+    } catch(e) {
+      l_gl = window;
+    }
+    return l_gl;
+  }()
+); 
