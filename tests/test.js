@@ -29,3 +29,18 @@ QUnit.test( "reset test", function( assert ) {
   assert.ok( window == _namespace, "Reset Passed!" ); 
 });
 
+
+QUnit.test( "root context test", function( assert ) {
+    assert.ok( window == _namespace_root_context, "Window is default" );
+    var test = {};
+    _namespace_root_context = test;
+    assert.ok( test == _namespace_root_context, "Swich root context passed" );
+     assert.notOk( (typeof test.SOME === "object" ), "Test before create" );
+    _namespace = "SOME";
+    assert.ok( (typeof test.SOME === "object" ), "Create in new root passed" );
+    _namespace_root_context = window;
+    assert.ok( window == _namespace_root_context, "Window is default again" );
+    
+    
+    
+});

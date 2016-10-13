@@ -1,5 +1,13 @@
 !function(_context) {
 var __namespace__ = _context;
+    Object.defineProperty(_context, "_namespace_root_context", {
+       get: function() {
+            return _context;
+       }, 
+       set: function(_ctx) {
+           _context = _ctx;
+       }
+    });
     Object.defineProperty(_context, "_namespace",{
       get: function() {
         return __namespace__;
