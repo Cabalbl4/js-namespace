@@ -1,5 +1,13 @@
 !function(_context) {
 var __namespace__ = _context;
+    Object.defineProperty(_context, "_namespace_root_context", {
+       get: function() {
+            return _context;
+       }, 
+       set: function(_ctx) {
+           _context = _ctx;
+       }
+    });
     Object.defineProperty(_context, "_namespace",{
       get: function() {
         return __namespace__;
@@ -27,4 +35,15 @@ var __namespace__ = _context;
         __namespace__ = current;
       }
     });
-}(this);
+}(
+  function() {
+    var l_gl = null;
+    //detect nodeJS
+    try {
+      l_gl = global;
+    } catch(e) {
+      l_gl = window;
+    }
+    return l_gl;
+  }()
+); 

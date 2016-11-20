@@ -68,3 +68,32 @@ _namespace.TestClass = function() {
 ...
 }; // same as SOME.NEW.NAMESPACE.TestClass = function
 ```
+
+### \_namespace_root_context variable
+A global property to hold default context to create namespaces in. Use with caution.
+
+```javascript
+let nsContainer = {};
+_namespace_root_context = nsContainer;
+
+_namespace = "SOME.NEW.NAMESPACE"
+
+///now equals to:
+if(! nsContainer.SOME) nsContainer.SOME = {};
+if(! nsContainer.SOME.NEW) nsContainer.SOME.NEW = {};
+if(! nsContainer.SOME.NEW.NAMESPACE) nsContainer.SOME.NEW.NAMESPACE = {};
+//ETC
+
+//Export it in NodeJS for example
+module.exports = nsContainer;
+
+///Do not forget to reset namespace root at the end of module or js file if you changed it, as it is a global property and its unexpected change may break other modules!
+//For browser
+_namespace_root_context = window;
+//OR for NodeJS
+_namespace_root_context = global;
+
+
+```
+
+
