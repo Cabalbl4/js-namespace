@@ -1,0 +1,20 @@
+{
+  "name": "js-namespace",
+  "homepage": "https://github.com/Cabalbl4/js-namespace",
+  "authors": [
+    "Vokhmin Ivan <cabalbl4@gmail.com>"
+  ],
+  "description": "Simple js namespacing",
+  "main": "src/namespace.js",
+  "keywords": [
+    "namespace"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
