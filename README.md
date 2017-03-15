@@ -1,25 +1,25 @@
 # js-namespace
 Small function to define JavaScript namespaces
 
-##Install using package managers
+## Install using package managers
 
-###NPM
+### NPM
 ```bash
 npm install --save simple-js-namespace
 ```
-#####More info
+##### More info
 https://www.npmjs.com/package/simple-js-namespace
 
-###Bower
+### Bower
 ```bash
 bower install simple-js-namespace --save
 ```
-##Add to node/browser
-####Require from node
+## Add to node/browser
+#### Require from node
 ```javascript
 require("simple-js-namespace");
 ```
-####Add to browser
+#### Add to browser
 ```html
 Production version:
 <script type="text/javascript" src="path_to_js-namespace/namespace.min.js"></script>
@@ -27,7 +27,7 @@ OR dev version:
 <script type="text/javascript" src="path_to_js-namespace/namespace.js"></script>
 ```
 
-##Usage
+## Usage
 
 Define and use a namespace (namespaces are dot-delimited by default)
 
